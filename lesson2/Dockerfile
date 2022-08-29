@@ -6,6 +6,8 @@ WORKDIR /app
 
 COPY . /app
 
+ENV PORT 8080
+
 RUN pip3 install -r requirements.txt
 
 RUN echo "Hello world" \
